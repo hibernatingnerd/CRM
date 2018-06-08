@@ -2,7 +2,10 @@ gem 'activerecord', '=4.2.10'
 require "mini_record"
 require "active_record"
 
-ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'crm.sqlite3')
+ActiveRecord::Base.establish_connection(
+  adapter: 'sqlite3',
+  database: 'crm.sqlite3'
+)
 
 class Contact < ActiveRecord::Base
 
