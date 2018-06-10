@@ -1,0 +1,28 @@
+li {
+  height: 3em;
+  background-color: grey;
+  width: 95%;
+  display: flex;
+  margin-bottom: 0.25em;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: darkgrey;
+  display: block;
+  width: 95%;
+  text-align: center;
+  height: 4em;
+
+}
+a {
+  color: white;
+  text-decoration: none;
+
+}
+
+h1 {
+  color: red;
+}
