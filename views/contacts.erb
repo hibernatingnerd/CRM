@@ -1,8 +1,16 @@
 
         <h1>Contacts</h1>
 
-        <% @contacts.each { |contact| %>
-          <p>
-            <%= contact.full_name %>
-          <p>
-        <% } %>
+
+        <div class="totalnumberofcontacts">
+          <h2>There are <%= @contacts.count %> contacts.</h2>
+        </div>
+
+           <% @contacts.each { |contact| %>
+             <div class="contactreadout">
+                <h2>
+                  <%= contact.full_name %> (<%= contact.email %>)
+                </h2>
+              </div>
+              <% } %>
+        </div>

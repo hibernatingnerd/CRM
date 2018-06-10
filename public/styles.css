@@ -1,7 +1,7 @@
-li {
+.navlist li {
   height: 3em;
   background-color: grey;
-  width: 95%;
+  width: 100%;
   display: flex;
   margin-bottom: 0.25em;
   list-style-type: none;
@@ -12,7 +12,7 @@ li {
 header {
   background-color: darkgrey;
   display: block;
-  width: 95%;
+  width: 100%;
   text-align: center;
   height: 4em;
 
@@ -23,6 +23,39 @@ a {
 
 }
 
-h1 {
-  color: red;
+.totalnumberofcontacts  {
+  height: 3em;
+  background-color: red;
+  width: 90%;
+  display: flex;
+  margin-bottom: 0.25em;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.contactreadout {
+  height: 4em;
+  background-color: aqua;
+  width: 90%;
+  display: flex;
+  margin-bottom: 0.5em;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 0.5em;
+}
+
+footer {
+  color: white;
+  height: 3em;
+  display: flex;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
 }
