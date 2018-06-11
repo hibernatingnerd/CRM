@@ -24,6 +24,10 @@ get '/contacts/:id' do
   end
 end
 
+get '/new' do
+  erb :new
+end
+
 
 after do
   ActiveRecord::Base.connection.close
