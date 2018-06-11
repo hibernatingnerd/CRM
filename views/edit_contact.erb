@@ -1,10 +1,14 @@
 <h1>Edit a Contact</h1>
-
+<!-- form populates the new contact form with existing user information  -->
 <form action='/contacts/<%= @contact.id %>' method='post'>
   <input type='hidden' name='_method' value='put'>
-<input type='text' name='first_name' value='<%= @contact.first_name %>'>
-<input type='text' name='last_name' value='<%= @contact.last_name %>'>
-<input type='text' name='email' value='<%= @contact.email %>'>
-<input type='text' name='note' value='<%= @contact.note %>'>
-<input type='submit' value='Edit Contact'>
+  <label for="firstname">First Name:</label>
+  <input id="firstname" type='text' name='first_name' value='<%= @contact.first_name %>'>
+  <label for="lastname">Last Name:</label>
+  <input id="lastname" type='text' name='last_name' value='<%= @contact.last_name %>'>
+  <label for="user_email">Email:</label>
+  <input id="user_email" type='text' name='email' value='<%= @contact.email %>'>
+  <label for="user_note">Note:</label>
+  <input id="user_note" type='text' name='note' value='<%= @contact.note %>'>
+  <input type='submit' value='Edit Contact'>
 </form>

@@ -15,15 +15,14 @@ header {
   width: 100%;
   text-align: center;
   height: 4em;
-
 }
+
 a {
   color: white;
   text-decoration: none;
-
 }
 
-.totalnumberofcontacts  {
+.totalnumberofcontacts {
   height: 3em;
   background-color: red;
   width: 90%;
