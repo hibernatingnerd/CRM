@@ -1,10 +1,8 @@
 
-
-
-        <div class="totalnumberofcontacts">
+      <div class="totalnumberofcontacts">
           <h2>There are <%= @contacts.count %> contacts.</h2>
         </div>
-
+      <div>
            <% @contacts.each { |contact| %>
              <a href="/contacts/<%= contact.id %>">
                <div class="contactreadout">
@@ -15,5 +13,5 @@
             </a>
               <% } %>
 
-          
+
         </div>
