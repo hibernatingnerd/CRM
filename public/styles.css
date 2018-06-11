@@ -1,6 +1,17 @@
+body {
+  background-color: black;
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(51, 255, 0)
+
+}
+
+h3 {
+  color: white;
+}
+
 .navlist li {
   height: 3em;
-  background-color: grey;
+  background-color: black;
   width: 100%;
   display: flex;
   margin-bottom: 0.25em;
@@ -10,21 +21,23 @@
 }
 
 header {
-  background-color: darkgrey;
-  display: block;
+  color: rgb(51, 255, 0);
+  background-color: black;
+  display: flex;
   width: 100%;
-  text-align: center;
-  height: 4em;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  height: 2em;
 }
 
 a {
-  color: white;
   text-decoration: none;
 }
 
 .totalnumberofcontacts {
   height: 3em;
-  background-color: red;
+  background-color: black;
   width: 90%;
   display: flex;
   margin-bottom: 0.25em;
@@ -36,7 +49,7 @@ a {
 
 .contactreadouts {
   height: 4em;
-  background-color: aqua;
+  background-color: black;
   width: 90%;
   display: flex;
   margin-bottom: 0.5em;

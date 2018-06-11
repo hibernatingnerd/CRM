@@ -87,6 +87,7 @@ put '/contacts/:id' do
   end
 end
 
+
 delete '/contacts/:id' do
   @contact = Contact.find_by(params[:id].to_i)
   if @contact
