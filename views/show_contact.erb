@@ -1,5 +1,5 @@
 
-<h1>show contact</h1>
+
 
 <h3>Name:
   <%= @contact.full_name %></h3>
@@ -10,9 +10,10 @@
 
   <a href="/contacts/<%= @contact.id %>/edit">EDIT</a>
 
-  <form action='/contacts/<%= @contact.id %>' method='post'>
-    <input type='hidden' name='_method' value='delete'>
-    <button type="submit">DELETE</button>
-  </form>
 
-<a href="../contacts">Back</a>
+          <form action='/contacts/<%= @contact.id%>' method='post'>
+            <input type='hidden' name='_method' value='delete'>
+            <button type='submit' value='Delete Contact'>DELETE</button>
+          </form>
+
+<a href="/contacts">Back</a>

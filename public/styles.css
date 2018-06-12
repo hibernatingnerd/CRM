@@ -9,6 +9,10 @@ h3 {
   color: white;
 }
 
+.opening  p{
+  text-align: center;
+}
+
 .navlist li {
   height: 3em;
   background-color: black;
@@ -27,7 +31,6 @@ header {
   width: 100%;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
   height: 2em;
 }
 

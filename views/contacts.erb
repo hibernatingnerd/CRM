@@ -2,19 +2,18 @@
 
 
 
-      <div class="totalnumberofcontacts">
-          <h2>There are <%= @contacts.count %> contacts.</h2>
+  <div class="totalnumberofcontacts">
+    <h2>There are <%= @contacts.count %> gladiators in the Arena.</h2>
+  </div>
+  <div>
+    <% @contacts.each { |contact| %>
+      <a href="/contacts/<%= contact.id %>">
+        <div class="contactreadouts">
+          <h2>
+            <%= contact.full_name %> (<%= contact.email %>)
+          </h2>
+          <p>Tips:<%= contact.id %></p>
         </div>
-      <div>
-           <% @contacts.each { |contact| %>
-             <a href="/contacts/<%= contact.id %>">
-               <div class="contactreadouts">
-                <h2>
-                  <%= contact.full_name %> (<%= contact.email %>)
-                </h2>
-              </div>
-            </a>
-              <% } %>
-
-
-        </div>
+      </a>
+    <% } %>
+  </div>

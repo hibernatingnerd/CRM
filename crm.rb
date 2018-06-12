@@ -10,6 +10,10 @@ get '/about' do
   erb :about
 end
 
+get '/contacts/new' do
+  erb :new
+end
+
 # get '/contacts' do
 #   @contacts = Contact.all
 #   erb :contacts
@@ -47,9 +51,7 @@ get '/contacts' do
   redirect to '/'
 end
 
-get '/contacts/new' do
-  erb :new
-end
+
 
 post '/contacts' do
   Contact.create(
@@ -80,7 +82,6 @@ put '/contacts/:id' do
       email:      params[:email],
       note:       params[:note]
     )
-
     redirect to('/contacts')
   else
     raise Sinatra::NotFound
@@ -89,7 +90,7 @@ end
 
 
 delete '/contacts/:id' do
-  @contact = Contact.find_by(params[:id].to_i)
+  @contact = Contact.find_by(id: params[:id].to_i)
   if @contact
     @contact.delete
     redirect to('/contacts')
